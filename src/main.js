@@ -1,0 +1,11 @@
+requirejs.config({
+    baseUrl:'./',
+    paths:{
+        text:'../static/vendor/bower_components/text/text',
+        css:'../static/vendor/bower_components/require-css/css',
+        knockout:'../static/vendor/bower_components/knockout/dist/knockout.debug'
+    }
+});
+require(['./index.js'],function(data){
+    console.log(data)
+})

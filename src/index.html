@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>knockout Component</title>
+    <script src="../static/vendor/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../static/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../static/vendor/bower_components/knockout/dist/knockout.debug.js"></script>
+    <script type="text/javascript" src="../static/vendor/bower_components/requirejs/require.js" data-main="main"></script>
+</head>
+<body>
+<h1> hello world</h1>
+<div id="#app">
+    <ul data-bind="foreach: products">
+        <li class="product">
+            <strong data-bind="text: name"></strong>
+            <like-or-dislike params="value: userRating"></like-or-dislike>
+        </li>
+    </ul>
+    <button data-bind="click: addProduct">Add a product</button>
+</div>
+</body>
+</html>
